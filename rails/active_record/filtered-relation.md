@@ -1,10 +1,10 @@
 # Filtering an ActiveRecord relation.
 
-A relationship such as `has_one`, `has_many`, or `belongs_to` usually links up records based on primary keys and foreign keys.
+A relationship such as `has_one`, `has_many`, or `belongs_to` links up records based on primary keys and foreign keys.
 
-What if another criteria is needed?  Filtering those records after they're loaded is error-prone - better to do it in the query.
+What if other criteria are needed?  Filtering those records after they're loaded is tedious and might be overlooked - better to do it in the query.
 
-In my case, I built a new app to list products on Google Shopping, replacing a legacy app that also published items to Bing, Yahoo and other services.  The product configurations  for those other channels should not be loaded into the new Google-only app.
+In my case, I built a new app to list products on Google Shopping, replacing part of legacy app that also publishes items to Bing, Yahoo and other services.  The product configurations  for those other channels should not be loaded into the new Google-only app.  (I can't just delete them, they're still used by the other app).
 
 ```ruby
 class Product
@@ -35,7 +35,7 @@ end
 ```
 
 ## Testing it.
-I could make lots of fixtures for those channels I don't care about and ensure they're not loaded.  Or, just look at the SQL:
+I could make lots of fixtures for those channels I don't care about and ensure they're not loaded.  Or,  just inspect the generated SQL:
 
 ```ruby
 expect(ChannelConfig.all.to_sql).to match(/channel_name='google'/)
