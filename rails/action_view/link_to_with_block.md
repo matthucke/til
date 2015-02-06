@@ -27,8 +27,8 @@ It was while examining the parameter list for link_to today that I discovered it
 
 ```haml
 = link_to @order.user do
-	%img{src: "user_icon.png"}
-	%br
+  %img{src: "user_icon.png"}
+  %br
   = @order.user.full_name
 ```
  
