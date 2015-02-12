@@ -7,7 +7,7 @@ things.map(&:name) # same as things.map { |foo| foo.name }
 things.sort_by(&:priority) #  same as things.sort_by { |foo| foo.priority }
 ```
 
-# Expression returning symbol, as Proc
+## Expression returning symbol, as Proc
 
 At first I'd thought "&:" was an operator - but it's not.  "&" is an operator, and the colon is just part of the symbol.  This is easily proven by putting some space between those characters:
 
