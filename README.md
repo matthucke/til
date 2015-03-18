@@ -8,6 +8,6 @@ https://github.com/thoughtbot/til
 or used in production for the first time.
 
 Longer, more polished entries will be published on my blog,
-Barbarian Developer, at http://barbarian.me
+Barbarian Engineer, at http://barbarian.engineer
 
 
