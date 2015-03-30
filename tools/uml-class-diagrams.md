@@ -32,4 +32,8 @@ Finally I tried ArgoUML.  The tool works, and I made a trivial diagram quickly, 
 
 GenMyModel, for now.  I paid for a subscription at the lowest level, $9 a month.  GenMyModel and Argo both claim to support the XMI interchange format, although Argo choked when I tried to import a file from GenMyModel - this may be something to explore later if I decide to change.
 
+## Update - March 30.
+
+I have cancelled my GenMyModel subscription, as they do not provide an export feature that preserves all information needed for editing - meaning that your diagrams do not exist as "living documents" outside of their web app, and one is locked into paying the monthly fee forever lest your data be lost.
+
 
